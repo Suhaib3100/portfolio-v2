@@ -201,15 +201,16 @@ const EmailSheetContent = ({ sheetsData }: Props) => {
               </FormItem>
             )}
           />
-          <Button
-            type="submit"
-            className="bg-[#8950ff] py-5 px-10 rounded-md text-white font-bold text-lg w-full hover:text-[#8950ff] transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
-          >
-            <div className="flex flex-row items-center justify-center gap-4">
-              <FaPaperPlane className="h-8 w-8 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-              <p className="text-sm">{sheetsData.contactSheet.submitButton}</p>
-            </div>
-          </Button>
+      <Button
+  type="submit"
+  className="bg-[#8950ff] py-5 px-10 rounded-md text-white font-bold text-lg w-full hover:text-[#8950ff] transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
+>
+  <div className="flex flex-row items-center justify-center gap-4">
+    <FaPaperPlane className="h-8 w-8 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
+    <p className="text-sm">{sheetsData.contactSheet.button}</p>
+  </div>
+</Button>
+
         </form>
       </Form>
     </SheetContent>

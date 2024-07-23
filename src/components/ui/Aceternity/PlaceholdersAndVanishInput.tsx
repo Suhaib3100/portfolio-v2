@@ -22,6 +22,7 @@ const PlaceholdersAndVanishInput = React.forwardRef<
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    
     let interval: any;
     const startAnimation = () => {
       interval = setInterval(() => {
