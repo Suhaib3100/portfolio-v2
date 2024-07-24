@@ -1,3 +1,4 @@
+// src/app/page.tsx
 "use client";
 
 import Navbar from "@/components/navbar";
@@ -13,6 +14,7 @@ import React from "react";
 import { useLocation } from "@/providers/localization-provider";
 import { SheetProvider } from "@/providers/sheet-provider";
 import StarsCanvas from "@/components/stars-canvas";
+import CalEmbed from "@/components/CalEmbed"; // Import the CalEmbed component
 
 export default function Home() {
   const { pageData, language, setLanguage } = useLocation();
@@ -41,6 +43,8 @@ export default function Home() {
         <div className="fixed bottom-4 right-6 z-50">
           <LanguageToggle language={language} setLanguage={setLanguage} />
         </div>
+
+        <CalEmbed /> {/* Add the CalEmbed component here */}
       </main>
     </SheetProvider>
   );

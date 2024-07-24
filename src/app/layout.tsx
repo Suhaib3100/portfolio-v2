@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,13 +7,13 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "sonner";
+import CalEmbed from "@/components/CalEmbed"; // Import the CalEmbed component
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Suhaib's Portfolio",
-  description:
-    "Fullstack Developer. Specializing in Next.js with passion for backend development and databases management.",
+  description: "Fullstack Developer. Specializing in Next.js with passion for backend development and databases management.",
 };
 
 export default function RootLayout({
@@ -23,10 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="10Sq2RwsVnvU-fikGubkgJXnDZdkXVt4EglfIiPqUX8"
-        />
+        <meta name="google-site-verification" content="10Sq2RwsVnvU-fikGubkgJXnDZdkXVt4EglfIiPqUX8" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -40,6 +38,7 @@ export default function RootLayout({
             {children}
             <SpeedInsights />
             <Analytics />
+            <CalEmbed /> {/* Add the CalEmbed component here */}
           </LocationProvider>
         </ThemeProvider>
       </body>
