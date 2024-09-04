@@ -171,7 +171,7 @@ export const data = {
           },
         ],
         linkText: "Elevate Your Life with AI",
-        link: "https://erasor.protool.cloud/",
+        link: "https://erasor.protool.co.in/",
       },
       {
         id: 2,
@@ -307,7 +307,7 @@ export const data = {
           },
         ],
         linkText: "Checkout my Agency",
-        link: "https://protool.cloud",
+        link: "https://agency.protool.co.in",
       },
       {
         id: 4,

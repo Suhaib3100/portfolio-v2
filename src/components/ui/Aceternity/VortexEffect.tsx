@@ -20,7 +20,7 @@ const VortexEffect = ({ sheetsData, handleCloseVortex }: Props) => {
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
         <a
-          href={"https://app.protool.cloud"}
+          href={"https://agency.protool.co.in"}
           target={"_blank"}
         >
           <Button
