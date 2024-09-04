@@ -6,7 +6,7 @@ export const data = {
       description:
         "Converting concepts into fully realized, end-to-end solutions as a Junior Full Stack Developer.",
       image: "/logosaas.png",
-      link: "https://github.com/RiP3rQ",
+      link: "https://github.com/Suhaib3100",
       dateText: "Developing since February 2020",
     },
     github: {
